@@ -1,0 +1,16 @@
+# Twilio params
+twilio_sid: ""
+twilio_auth_token: ""
+twilio_send_number: "+1..."
+
+# runtime params
+interval: 1 # how many minutes to sleep after running test(s)
+tests_path: "/tests" # path where all tests are located, will traverse all subfolders
+
+SMS_reporting_numbers: # phone numbers to report failure to
+   - "+1..."
+   - "+1..."
+   
+# SMS body when server enters failure state
+failure_SMS_msg: "Status Alert:\nPlatform FAILURE:\n" 
+recover_SMS_msg: "Status Alert:\nPlatform has been RESTORED:\n" 
